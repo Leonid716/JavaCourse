@@ -12,6 +12,6 @@ public class Card {
         if (sum > 150_000)
             System.out.println("Gold card");
 
-    return sum;
+        return sum;
     }
 }
