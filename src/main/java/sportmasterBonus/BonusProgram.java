@@ -7,7 +7,7 @@ public class BonusProgram {
             return currentPurchase / 1000 * 50;
         } else if ((totalPurchases > 15_000) && (totalPurchases < 150_000)) {
             return currentPurchase / 1000 * 70;
-        } else if (totalPurchases >= 15_0000) {
+        } else if (totalPurchases >= 150_000) {
             return currentPurchase / 1000 * 100;
 
         }
