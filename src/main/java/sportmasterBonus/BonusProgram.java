@@ -1,4 +1,4 @@
-package SportmasterBonus;
+package sportmasterBonus;
 
 public class BonusProgram {
     public int calculate(int currentPurchase, int totalPurchases) {

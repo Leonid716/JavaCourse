@@ -1,4 +1,4 @@
-package SportmasterBonus;
+package sportmasterBonus;
 
 public class Card {
     public int purchasesSum(int sum) {

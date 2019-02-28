@@ -1,4 +1,4 @@
-package SportmasterBonus;
+package sportmasterBonus;
 
 import org.junit.jupiter.api.Test;
 
@@ -16,11 +16,24 @@ class BonusProgramTest {
         }
 
         {
+            BonusProgram program = new BonusProgram();
+            int bonus = program.calculate(10_000,10_000);
+
+            assertEquals(500,bonus);
+        }
+
+        {
             Card card = new Card();
             int lvl = card.purchasesSum(160_000);
 
             assertEquals(160_000,lvl);
+        }
 
+        {
+            Card card = new Card();
+            int lvl = card.purchasesSum(17_000);
+
+            assertEquals(17_000,lvl);
         }
 
 
