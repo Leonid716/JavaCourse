@@ -7,20 +7,20 @@ import static org.junit.jupiter.api.Assertions.*;
 class BonusProgramTest {
 
     @Test
-    public void calculateBonusBl() {
-        BonusProgram program = new BonusProgram();
-        int bonus = program.calculate(4_000, 16_000);
-
-        assertEquals(280, bonus);
-    }
-
-
-    @Test
-    public void calculateBonusSi() {
+    public void calculateBonusBlue() {
         BonusProgram program = new BonusProgram();
         int bonus = program.calculate(22_000, 14_000);
 
         assertEquals(1100, bonus);
+    }
+
+
+    @Test
+    public void calculateBonusSilver() {
+        BonusProgram program = new BonusProgram();
+        int bonus = program.calculate(22_000, 18_000);
+
+        assertEquals(1540, bonus);
     }
 
 
@@ -40,11 +40,4 @@ class BonusProgramTest {
         assertEquals(0, bonus);
     }
 
-//    @Test
-//    public void calculateCardLvl() {
-//        Card card = new Card();
-//        int lvl = card.purchasesSum(160_000);
-//
-//        assertEquals(160_000, lvl);
-//    }
 }
